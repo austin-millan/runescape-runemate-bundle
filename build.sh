@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t oldschool-runemate-bundle:latest .
+docker build -t aamillan/runescape-runemate-bundle:latest .
