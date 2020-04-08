@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t oldschool-runemate-launcher:latest .
+docker build -t oldschool-runemate-bundle:latest .

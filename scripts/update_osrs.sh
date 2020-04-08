@@ -1,7 +1,7 @@
 #!/bin/bash
 
-mkdir -p '/tmp/oldschool'
-wget -O '/tmp/oldschool/OldSchool.msi' 'http://www.runescape.com/downloads/oldschool.msi'
+mkdir -p /tmp/oldschool
+wget -O '/tmp/oldschool/OldSchool.msi 'http://www.runescape.com/downloads/oldschool.msi'
 cd /tmp/oldschool && msiextract OldSchool.msi
 cp /tmp/oldschool/jagexlauncher/jagexlauncher/bin/jagexappletviewer.jar /usr/local/bin/jagexappletviewer.jar
 cp /tmp/oldschool/jagexlauncher/jagexlauncher/oldschool/jagexappletviewer.png /usr/local/share/jagexappletviewer.png

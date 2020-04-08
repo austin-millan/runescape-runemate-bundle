@@ -1,4 +1,4 @@
-# RuneScape + RuneMate Image
+# RuneScape & RuneMate Bundle
 
 This repository provides a way to run RuneScape + RuneMate in a Docker container.
 
@@ -17,10 +17,24 @@ This script builds your image.
 
 ## Run
 
-This script brings up a container, allowing you to login to the application.
+### Run OSRS
 
 ```bash
-./run.sh
+docker run -tid \
+       -e DISPLAY=$DISPLAY \
+       -v /tmp/.X11-unix:/tmp/.X11-unix \
+       oldschool-runemate-launcher:latest \
+       oldschool
+```
+
+### Run OSRS & RuneMate
+
+```bash
+docker run -tid \
+       -e DISPLAY=$DISPLAY \
+       -v /tmp/.X11-unix:/tmp/.X11-unix \
+       oldschool-runemate-launcher:latest \
+       bash -c "oldschool & RuneMate"
 ```
 
 Note, you may run into an issue with X11 server:
