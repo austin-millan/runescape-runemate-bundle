@@ -19,7 +19,7 @@ docker pull aamillan/runescape-runemate-bundle
 
 ```bash
 git clone https://github.com/austin-millan/runescape-runemate-bundle.git && cd runescape-runemate-bundle
-docker build -t runescape-runemate-bundle:latest .
+docker build -t aamillan/runescape-runemate-bundle:latest .
 ```
 
 ## Run
@@ -30,7 +30,7 @@ docker build -t runescape-runemate-bundle:latest .
 docker run -tid \
        -e DISPLAY=$DISPLAY \
        -v /tmp/.X11-unix:/tmp/.X11-unix \
-       oldschool-runemate-launcher:latest \
+       aamillan/runescape-runemate-bundle:latest \
        oldschool
 ```
 
@@ -40,7 +40,7 @@ docker run -tid \
 docker run -tid \
        -e DISPLAY=$DISPLAY \
        -v /tmp/.X11-unix:/tmp/.X11-unix \
-       oldschool-runemate-launcher:latest \
+       aamillan/runescape-runemate-bundle:latest \
        bash -c "oldschool & RuneMate"
 ```
 
