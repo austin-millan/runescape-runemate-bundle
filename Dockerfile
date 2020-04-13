@@ -13,7 +13,8 @@ RUN apt-get update && apt-get install -y \
     libcanberra-gtk-module \
     libasound2-plugins \
     libcanberra-pulse \
-    msitools
+    msitools \
+    x11-utils
 COPY scripts/update_osrs.sh /usr/local/bin/update_osrs
 COPY scripts/update_runemate.sh /usr/local/bin/update_runemate
 RUN chmod +x /usr/local/bin/update_osrs
@@ -21,3 +22,4 @@ RUN chmod +x /usr/local/bin/update_runemate
 RUN update_osrs
 RUN update_runemate
 CMD ["/bin/bash", "oldschool & RuneMate"]
+ENTRYPOINT ["/bin/bash", "oldschool & RuneMate"]

@@ -28,10 +28,10 @@ docker build -t aamillan/runescape-runemate-bundle:latest .
 
 ```bash
 docker run -tid \
-       -e DISPLAY=$DISPLAY \
+       -e DISPLAY=:0 \
        -v /tmp/.X11-unix:/tmp/.X11-unix \
        aamillan/runescape-runemate-bundle:latest \
-       oldschool
+       bash -c "oldschool"
 ```
 
 ### Run OSRS & RuneMate
