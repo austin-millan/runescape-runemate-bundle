@@ -3,6 +3,6 @@
 docker run -ti \
        -e DISPLAY=$DISPLAY \
        -v /tmp/.X11-unix:/tmp/.X11-unix \
-       oldschool-runemate-bundle:latest \
-       bash
+       aamillan/runescape-runemate-bundle:latest \
+       bash -c "oldschool & RuneMate"
        

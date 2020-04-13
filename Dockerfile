@@ -22,4 +22,4 @@ RUN chmod +x /usr/local/bin/update_runemate
 RUN update_osrs
 RUN update_runemate
 CMD ["/bin/bash", "oldschool & RuneMate"]
-ENTRYPOINT ["/bin/bash", "oldschool & RuneMate"]
+# ENTRYPOINT ["/bin/bash", "oldschool & RuneMate"]
