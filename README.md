@@ -47,3 +47,7 @@ docker run -tid \
 ## Wiki (Documentation / Troubleshooting)
 
 [runescape-runemate-bundle/wiki](https://github.com/austin-millan/runescape-runemate-bundle/wiki)
+
+## Repository Views
+
+[![HitCount](http://hits.dwyl.com/austin-millan/robinhood-client.svg)](http://hits.dwyl.com/austin-millan/runescape-runemate-bundle)
